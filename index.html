@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real State</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="asset/css/bootstrap.min.css">
     <link rel="stylesheet" href="asset/css/style.css">
@@ -12,12 +13,37 @@
 
 <body>
     <header id="header">
-        <nav class="nav container">
+        <nav class="nav container d-flex justify-content-between">
             <div class="nav_left">
                 <img src="./asset/image/site_logo.svg" alt="site_logo">
                 <h4 class="sub_heading nav_sub_heading m-0">Real State</h4>
             </div>
-            <div class="nav_right"></div>
+            <div class="nav_right">
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <i class="fas fa-bars" id="hamburger"></i>
+                    <i class="fas fa-times" id="cancel"></i>
+                </label>
+                <ul class="nav_list m-0">
+                    <li class="nav_items"><a href="#" class="nav_links">Home</a></li>
+                    <li class="nav_items"><a href="#" class="nav_links">Services</a></li>
+                    <li class="nav_items"><a href="#" class="nav_links">Properties</a></li>
+                    <li class="nav_items"><a href="#" class="nav_links">About Us</a></li>
+                    <li class="nav_items"><a href="#" class="nav_links">Our Works</a></li>
+                    <li class="d-md-none">
+                        <button class="nav_btn d-flex border-0 align-items-center">
+                            <img src="./asset/image/Phone.svg" alt="phone">
+                            Contact Us
+                        </button>
+                    </li>
+                </ul>
+                <div class="d-none d-md-block">
+                    <button class="nav_btn d-flex border-0 align-items-center">
+                        <img src="./asset/image/Phone.svg" alt="phone">
+                        Contact Us
+                    </button>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
