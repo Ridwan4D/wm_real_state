@@ -5,8 +5,70 @@
     font-style: normal;
 }
 
+:root {
+    --heading_1_color: #0F172A;
+    --secondary_color: #0891B2;
+    --jet_gray: #2D2D2D;
+}
 
-
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
     font-family: 'MyFont', sans-serif;
 }
+
+/* .font_helvetica {
+} */
+
+.heading_1,
+.heading_2,
+.heading_3 {
+    font-size: 80px;
+    line-height: 110px;
+    font-weight: 400;
+    color: var(--heading_1_color);
+}
+
+.heading_2 {
+    font-size: 65px;
+    line-height: 83px;
+}
+
+.heading_3 {
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.sub_heading {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--secondary_color);
+}
+
+.container {
+    max-width: 1340px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* ===================== header section start ===================== */
+#header {
+    margin-top: 40px;
+}
+.nav_left{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.nav_sub_heading {
+    color: var(--jet_gray);
+}
+
+/* ===================== header section end ===================== */
