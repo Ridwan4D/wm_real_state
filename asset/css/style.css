@@ -11,6 +11,8 @@
     --jet_gray: #2D2D2D;
     --nav_link: #999999;
     --btn_text: #FEFDFD;
+    --black: #000;
+    --white: #FFFFFF;
 }
 
 * {
@@ -66,10 +68,8 @@
     margin-top: 40px;
 }
 
-.nav_left {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+.nav_left_link {
+    text-decoration: none;
 }
 
 .nav_sub_heading {
@@ -109,6 +109,21 @@
     border-radius: 50px;
     background: #090909;
     padding: 14px 24px;
+}
+
+.menu_label #hamburger,
+.menu_label #cancel {
+    color: var(--black);
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
 }
 
 /* ===================== header section end ===================== */
