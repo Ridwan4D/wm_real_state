@@ -59,6 +59,11 @@
     color: var(--secondary_color);
 }
 
+.desc_text {
+    font-size: 20px;
+    font-weight: 400;
+}
+
 /* ===================== header section start ===================== */
 #header {
     margin-top: 40px;
@@ -209,5 +214,16 @@
     text-align: left;
     color: var(--ox_blood);
 }
+
+.hero_svg_container {
+    display: flex;
+    justify-content: end;
+}
+
+.hero_svg_img {
+    width: 95%;
+}
+
+.tea_user_img {}
 
 /* ===================== hero section end ===================== */
