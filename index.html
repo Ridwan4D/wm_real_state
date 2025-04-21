@@ -15,32 +15,30 @@
 <body>
     <header id="header">
         <nav class="nav container d-flex justify-content-between">
-            <div class="nav_left">
-                <a href="#" class="d-flex align-items-center nav_left_link d-block">
-                    <img src="./asset/image/site_logo.svg" alt="site_logo">
-                    <h4 class="sub_heading nav_sub_heading m-0">Real State</h4>
-                </a>
+            <div class="nav_left d-flex align-items-center">
+                <img src="./asset/image/site_logo.svg" alt="site_logo" class="site_logo">
+                <h4 class="sub_heading nav_sub_heading m-0">Real State</h4>
             </div>
-            <div class="nav_right">
+            <div class="nav_right position-relative">
                 <input type="checkbox" id="check">
-                <label for="check" class="menu_label">
+                <label for="check" id="menu_label">
                     <i class="fas fa-bars" id="hamburger"></i>
                     <i class="fas fa-times" id="cancel"></i>
                 </label>
-                <ul class="nav_list m-0">
+                <ul class="nav_list m-0 p-0">
                     <li class="nav_items"><a href="#" class="nav_links">Home</a></li>
                     <li class="nav_items"><a href="#" class="nav_links">Services</a></li>
                     <li class="nav_items"><a href="#" class="nav_links">Properties</a></li>
                     <li class="nav_items"><a href="#" class="nav_links">About Us</a></li>
                     <li class="nav_items"><a href="#" class="nav_links">Our Works</a></li>
-                    <li class="d-md-none">
-                        <button class="nav_btn d-flex border-0 align-items-center">
-                            <img src="./asset/image/Phone.svg" alt="phone">
+                    <li class="d-lg-none">
+                        <button class="nav_btn res_nav_btn d-flex border-0 align-items-center ">
+                            <img src="./asset/image/Phone.svg" alt="phone" class="nav_list_btn_img">
                             Contact Us
                         </button>
                     </li>
                 </ul>
-                <div class="d-none d-md-block">
+                <div class="d-none d-lg-block">
                     <button class="nav_btn d-flex border-0 align-items-center">
                         <img src="./asset/image/Phone.svg" alt="phone">
                         Contact Us

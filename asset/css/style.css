@@ -24,8 +24,13 @@
     font-family: 'MyFont', sans-serif;
 }
 
-/* .font_helvetica {
-} */
+.container {
+    max-width: 1340px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
 
 .heading_1,
 .heading_2,
@@ -53,23 +58,13 @@
     color: var(--secondary_color);
 }
 
-.container {
-    max-width: 1340px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 15px;
-}
-
-
-
 /* ===================== header section start ===================== */
 #header {
     margin-top: 40px;
 }
 
-.nav_left_link {
-    text-decoration: none;
+.nav_left {
+    gap: 12px;
 }
 
 .nav_sub_heading {
@@ -111,13 +106,12 @@
     padding: 14px 24px;
 }
 
-.menu_label #hamburger,
-.menu_label #cancel {
-    color: var(--black);
-    font-size: 30px;
+#menu_label #hamburger,
+#menu_label #cancel {
+    color: rgb(44, 59, 82);
+    font-size: 22px;
     float: right;
-    line-height: 80px;
-    margin-right: 40px;
+    margin-right: 1px;
     cursor: pointer;
     display: none;
 }
