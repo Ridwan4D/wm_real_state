@@ -478,7 +478,6 @@
         top: -16%;
     }
 
-    /* ===================== gallery 1 section end ===================== */
 }
 
 
@@ -507,6 +506,30 @@
     .banner_text {
         text-align: start;
     }
+
+    /* ===================== gallery 1 section start ===================== */
+    .g_bg_container {
+        padding: 55px 0px 55px 0;
+    }
+
+    .inner_container {
+        gap: 0;
+        padding: 2px;
+    }
+    
+    .video-container {
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .g_1_ellipse {
+        left: 27%;
+        width: 45%;
+        top: -15%;
+    }
+
+    /* ===================== gallery 1 section end ===================== */
 }
 
 @media(max-width: 375px) {
