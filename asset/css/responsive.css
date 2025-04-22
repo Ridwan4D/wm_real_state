@@ -126,6 +126,10 @@
         margin-left: 25px;
     }
 
+    .g_1_ellipse {
+        left: 75%;
+    }
+
     /* ===================== gallery 1 section end ===================== */
 }
 
@@ -254,6 +258,40 @@
     }
 
     /* ===================== hero section end ===================== */
+
+    /* ===================== gallery 1 section start ===================== */
+    .inner_container {
+        gap: 45px;
+    }
+
+    .video-container {
+        width: 340px;
+        height: 195px;
+    }
+
+    .g_1_ellipse {
+        top: -20%;
+        left: 75%;
+        width: 30%;
+    }
+
+    .g_1_right .heading_3 {
+        font-size: 20px;
+        line-height: 100%;
+        margin-bottom: 16px;
+    }
+
+    .g_1_desc {
+        font-size: 14px;
+    }
+
+    .g_1_btn {
+        font-size: 14px;
+        padding: 7px 11px;
+    }
+
+    /* ===================== gallery 1 section end ===================== */
+
 }
 
 @media(max-width: 767px) {
