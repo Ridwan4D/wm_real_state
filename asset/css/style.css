@@ -14,6 +14,7 @@
     --black: #000;
     --white: #FFFFFF;
     --ox_blood: #78261A;
+    --slate_gray: #475569;
 }
 
 * {
@@ -221,9 +222,38 @@
 }
 
 .hero_svg_img {
-    width: 95%;
+    /* width: 95%; */
+    margin-top: -10px;
 }
 
-.tea_user_img {}
+.badge_container {
+    left: -5px;
+    bottom: 0;
+    z-index: 9996;
+}
+
+.tea_user_img {
+    width: 137px;
+    height: 88px;
+    border-radius: 32px;
+    top: 0px;
+    left: 12px;
+}
+
+.hero_bg_text_container {
+    bottom: 18px;
+    left: 190px;
+}
+
+.hero_bg_text {
+    color: var(--slate_gray);
+    margin-bottom: 10px !important;
+}
+
+.user_name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #5C4947;
+}
 
 /* ===================== hero section end ===================== */
