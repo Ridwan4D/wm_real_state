@@ -15,6 +15,8 @@
     --white: #FFFFFF;
     --ox_blood: #78261A;
     --slate_gray: #475569;
+    --alabaster: #F7F5F2;
+    --turquoise: #1DAFCC;
 }
 
 * {
@@ -51,6 +53,8 @@
 .heading_3 {
     font-size: 36px;
     line-height: 48px;
+    color: var(--heading_1_color);
+
 }
 
 .sub_heading {
@@ -257,3 +261,105 @@
 }
 
 /* ===================== hero section end ===================== */
+
+/* ===================== galley_1 section start ===================== */
+#gallery_1_section {
+    margin-top: 64px;
+}
+
+.g_bg_container {
+    max-width: 997px;
+    background: var(--alabaster);
+    padding: 77px 26px 77px 0;
+    margin-left: auto;
+}
+
+.inner_container {
+    padding-right: 49px;
+    align-items: center;
+}
+
+.video-container {
+    width: 440px;
+    height: 268px;
+    cursor: pointer;
+    margin-left: -187px;
+    ;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-color: var(--turquoise);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.play-button:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.play-button::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 25px solid white;
+    margin-left: 5px;
+}
+
+.video-container:hover .play-button {
+    background-color: #1798b2;
+}
+
+.g_1_ellipse {
+    top: -55px;
+    z-index: 9990;
+    left: 54%;
+}
+
+.g_1_right {
+    max-width: 400px;
+}
+
+.g_1_right .sub_heading {
+    margin-bottom: 12px;
+}
+
+.g_1_right .heading_3,
+.g_1_desc {
+    margin-bottom: 24px;
+}
+
+.g_1_desc {
+    color: #3E3D3D;
+}
+
+.g_1_btn {
+    border: none;
+    outline: none;
+    background: #262626;
+    color: var(--white);
+    padding: 12px 16px;
+    gap: 12px;
+    transition: all .3s ease-out;
+}
+.g_1_btn:hover{
+    transform: scale(1.03);
+}
+/* ===================== galley_1 section end ===================== */
