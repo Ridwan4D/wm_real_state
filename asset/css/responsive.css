@@ -65,6 +65,13 @@
     }
 
     /* ===================== hero section end ===================== */
+
+    /* ===================== gallery 1 section start ===================== */
+    .video-container {
+        margin-left: -170px;
+    }
+
+    /* ===================== gallery 1 section end ===================== */
 }
 
 @media(max-width: 1200px) {
@@ -104,6 +111,22 @@
         bottom: 25px;
         left: 54%;
     }
+
+    /* ===================== gallery 1 section start ===================== */
+    .g_bg_container {
+        max-width: 100%;
+    }
+
+    .inner_container {
+        padding-right: 0;
+        align-items: center;
+    }
+
+    .video-container {
+        margin-left: 25px;
+    }
+
+    /* ===================== gallery 1 section end ===================== */
 }
 
 @media(max-width: 1024px) {
