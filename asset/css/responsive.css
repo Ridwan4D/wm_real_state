@@ -394,6 +394,14 @@
     }
 
     /* ===================== hero section end ===================== */
+
+    /* ===================== gallery 1 section start ===================== */
+    .inner_container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* ===================== gallery 1 section end ===================== */
 }
 
 
@@ -458,6 +466,19 @@
     }
 
     /* ===================== hero section end ===================== */
+
+    /* ===================== gallery 1 section start ===================== */
+    .video-container {
+        width: 355px;
+    }
+
+    .g_1_ellipse {
+        left: 76%;
+        width: 35%;
+        top: -16%;
+    }
+
+    /* ===================== gallery 1 section end ===================== */
 }
 
 
