@@ -189,9 +189,20 @@
     }
 
     /* ===================== hero section end ===================== */
+
+    /* ===================== slider 1 section start ===================== */
+    .slide_1_top {
+        margin-bottom: 45px;
+    }
+
+    /* ===================== slider 1 section end ===================== */
 }
 
 @media(min-width: 768px) and (max-width: 991px) {
+    .heading_1 {
+        font-size: 60px;
+        line-height: 80px;
+    }
 
     /* ===================== header section start ===================== */
     .site_logo,
@@ -292,6 +303,10 @@
 
     /* ===================== gallery 1 section end ===================== */
 
+    /* ===================== slider 1 section start ===================== */
+
+
+    /* ===================== slider 1 section end ===================== */
 }
 
 @media(max-width: 767px) {
@@ -402,6 +417,18 @@
     }
 
     /* ===================== gallery 1 section end ===================== */
+
+    /* ===================== slider 1 section start ===================== */
+    .heading_1 {
+        font-size: 60px;
+        line-height: 80px;
+    }
+
+    .slider_1_container {
+        padding-top: 0;
+    }
+
+    /* ===================== slider 1  section end ===================== */
 }
 
 
@@ -478,6 +505,20 @@
         top: -16%;
     }
 
+    /* ===================== gallery 1 section end ===================== */
+
+    /* ===================== slider section start ===================== */
+
+    .my_swiper_1_btn_container {
+        margin-top: 28px;
+    }
+
+    .heading_1 {
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+    /* ===================== slider section end ===================== */
 }
 
 
@@ -516,7 +557,7 @@
         gap: 0;
         padding: 2px;
     }
-    
+
     .video-container {
         width: 96%;
         margin-left: auto;

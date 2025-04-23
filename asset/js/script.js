@@ -43,10 +43,10 @@ document.addEventListener('DOMContentLoaded', function () {
 /** =============================
  * script for slider
 ============================= */
-swiper = new Swiper(".mySwiper_1", {
-    slidesPerView: 'auto',
+const swiper = new Swiper(".mySwiper_1", {
+    slidesPerView: 'auto', // Default for large screens
     centeredSlides: true,
-    spaceBetween: 10,
+    spaceBetween: 40,
     loop: true,
     navigation: {
         nextEl: ".swiper_1_button_next",
@@ -56,6 +56,20 @@ swiper = new Swiper(".mySwiper_1", {
         el: ".swiper_1_pagination",
         clickable: true,
     },
-    initialSlide: 4,
+    initialSlide: 1,
     grabCursor: true,
+    breakpoints: {
+        // For small devices (<= 640px)
+        0: {
+            slidesPerView: 1,
+        },
+        // For medium devices (>= 641px)
+        641: {
+            slidesPerView: 2,
+        },
+        // For larger devices (>= 1024px)
+        1024: {
+            slidesPerView: 'auto',
+        }
+    }
 });
