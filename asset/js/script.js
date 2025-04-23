@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
 /** =============================
  * script for slider
 ============================= */
-const swiper = new Swiper(".mySwiper_1", {
+swiper = new Swiper(".mySwiper_1", {
     slidesPerView: 'auto', // Default for large screens
     centeredSlides: true,
     spaceBetween: 40,
@@ -72,4 +72,19 @@ const swiper = new Swiper(".mySwiper_1", {
             slidesPerView: 'auto',
         }
     }
+});
+
+
+swiper = new Swiper(".mySwiper_2", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+        nextEl: ".swiper_2_button_next",
+        prevEl: ".swiper_2_button_prev",
+    },
+    pagination: {
+        el: ".swiper_2_pagination",
+        clickable: true,
+    },
 });
