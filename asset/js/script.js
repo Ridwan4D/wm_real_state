@@ -37,3 +37,25 @@ document.addEventListener('DOMContentLoaded', function () {
         videoContainer.style.zIndex = "9989";
     });
 });
+
+
+
+/** =============================
+ * script for slider
+============================= */
+swiper = new Swiper(".mySwiper_1", {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    spaceBetween: 10,
+    loop: true,
+    navigation: {
+        nextEl: ".swiper_1_button_next",
+        prevEl: ".swiper_1_button_prev",
+    },
+    pagination: {
+        el: ".swiper_1_pagination",
+        clickable: true,
+    },
+    initialSlide: 4,
+    grabCursor: true,
+});
