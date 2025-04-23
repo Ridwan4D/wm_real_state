@@ -76,8 +76,8 @@ swiper = new Swiper(".mySwiper_1", {
 
 
 swiper = new Swiper(".mySwiper_2", {
-    slidesPerView: "auto",
-    spaceBetween: 30,
+    slidesPerView: 2,
+    spaceBetween: 20,
     loop: true,
     navigation: {
         nextEl: ".swiper_2_button_next",
