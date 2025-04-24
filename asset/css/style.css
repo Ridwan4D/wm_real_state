@@ -20,6 +20,7 @@
     --ghostwhite: #F8FAFC;
     --pagination_bullet: #4C9EAA;
     --base_text_color: #4B5563;
+    --map_bg: #E6E6E6;
 }
 
 * {
@@ -505,6 +506,21 @@
     width: 35% !important;
 }
 
-
-
 /* ===================== slider_2 section end ===================== */
+
+/* ===================== map section start ===================== */
+#map_section {
+    background-color: var(--map_bg);
+    max-height: 780px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.map_img {
+    width: 70%;
+    transform: rotate(17.92deg);
+    margin-top: -495px;
+    margin-left: -377px;
+}
+
+/* ===================== map section end ===================== */
