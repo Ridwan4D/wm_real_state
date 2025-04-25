@@ -22,6 +22,7 @@
     --base_text_color: #4B5563;
     --map_bg: #E6E6E6;
     --desc_color: #3E3D3D;
+    --deep_slate: #1E293B;
 }
 
 * {
@@ -680,8 +681,209 @@
     border-radius: 36px;
     transition: all .2s ease-out;
 }
-.counter_btn:hover{
+
+.counter_btn:hover {
     transform: scale(.95);
 }
 
 /* ===================== counter section end ===================== */
+
+/* ===================== choose section start ===================== */
+#choose_section {
+    padding: 64px 15px;
+}
+
+.choose_container {
+    max-width: 1240px;
+}
+
+.choose_top {
+    max-width: 503px;
+}
+
+.choose_middle {
+    margin-top: 96px;
+}
+
+.choose_text {
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--deep_slate);
+    margin-bottom: 24px;
+}
+
+.choose_img_container {
+    max-height: 682px;
+}
+
+.choose_bottom {
+    margin-top: 64px;
+}
+
+.choose_filters {
+    margin-bottom: 56px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: end;
+}
+
+.filter_floor label,
+.filter_rooms label {
+    font-size: 14px;
+    color: #4b5563;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#floorSelect {
+    width: 170px;
+    border: none;
+    border-bottom: 1px solid #0F172A;
+    font-size: 14px;
+    color: #374151;
+}
+
+#floorSelect:focus {
+    border: none;
+    border-bottom: 1px solid #0F172A;
+    outline: none;
+}
+
+.room_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.room_buttons button {
+    padding: 8px 16px;
+    background-color: #f1f5f9;
+    color: #374151;
+    border: 1px solid #d1d5db;
+    border-radius: 9999px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.room_buttons button:hover,
+.room_buttons button.active {
+    background-color: #d1d5db;
+}
+
+.view_all_apartments {
+    margin-top: 24px;
+    text-align: center;
+}
+
+#viewAllBtn {
+    padding: 12px 24px;
+    background-color: #1f2937;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#viewAllBtn:hover {
+    background-color: #111827;
+}
+
+#apartmentCount {
+    background-color: #f3f4f6;
+    color: #1f2937;
+    padding: 2px 8px;
+    border-radius: 12px;
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+#apartmentTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+}
+
+.thead {
+    background-color: #f9fafb;
+}
+
+.table_heading {
+    position: relative;
+    padding: 12px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #374151;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.sortable::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 4px;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background-image: url('../image/apartment_up_down_arrow.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sortable_1::after {
+    content: url("../image/apartment_up_fill_arr.svg");
+}
+
+.table_body tr {
+    border-bottom: 1px solid #f1f5f9;
+    background: #F1F5F9;
+}
+
+.table_body tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+.table_data {
+    padding: 14px 16px;
+    font-size: 12px;
+    color: #4b5563;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.table_data button {
+    padding: 6px 12px;
+    background-color: #f3f4f6;
+    color: #1f2937;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.table_data button:hover {
+    background-color: #e5e7eb;
+}
+
+.table_body tr:hover {
+    background-color: #f1f5f9;
+}
+
+
+
+/* ===================== choose section end ===================== */

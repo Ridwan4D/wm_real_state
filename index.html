@@ -337,6 +337,75 @@
             </div>
         </section>
         <!-- counter section ends here -->
+
+        <!-- choose section start here -->
+        <section id="choose_section">
+            <div class="container choose_container">
+                <div class="choose_top">
+                    <h1 class="heading_1">
+                        Choose your
+                        city apartment
+                    </h1>
+                </div>
+                <div class="choose_middle">
+                    <p class="choose_text">Apartments</p>
+                    <div class="choose_img_container">
+                        <img src="./asset/image/appartment_img.png" alt="apartment" class="w-100">
+                    </div>
+                </div>
+                <div class="choose_bottom">
+                    <!-- Additional Filters (added under heading_1) -->
+                    <div class="choose_filters">
+                        <div class="filter_floor">
+                            <label for="floorSelect">Floor</label>
+                            <select id="floorSelect">
+                                <option value="all">All</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="filter_rooms">
+                            <label>Number of rooms</label>
+                            <div class="room_buttons">
+                                <button data-room="1">1</button>
+                                <button data-room="1.5">1.5</button>
+                                <button data-room="2">2</button>
+                                <button data-room="3">3</button>
+                                <button data-room="4">4</button>
+                                <button data-room="commercial">commercial premises</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <table id="apartmentTable">
+                        <thead class="thead">
+                            <tr>
+                                <th class="sortable_1 table_heading">Completion</th>
+                                <th class="sortable table_heading">Type</th>
+                                <th class="sortable table_heading">Unit number</th>
+                                <th class="sortable table_heading">Floor</th>
+                                <th class="sortable table_heading">Number of rooms</th>
+                                <th class="sortable table_heading">Unit area</th>
+                                <th class="sortable table_heading">Loggie/terrace</th>
+                                <th class="sortable table_heading">Total</th>
+                                <th class="sortable table_heading">Discounted price with vat</th>
+                                <th class="sortable table_heading">Availability</th>
+                                <th class="table_heading">360°</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table_body" id="tableBody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- choose section ends here -->
+
+
     </main>
     <footer>
         <br><br><br><br><br><br><br><br>
@@ -344,6 +413,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="asset/js/bootstrap.bundle.min.js"></script>
     <script src="asset/js/script.js"></script>
+    <script src="asset/js/table.js"></script>
 </body>
 
 </html>
