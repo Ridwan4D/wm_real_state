@@ -303,7 +303,7 @@
     /* ===================== map section end ===================== */
 }
 
-@media(min-width: 768px) and (max-width: 991px) {
+@media(max-width: 991px) {
     .heading_1 {
         font-size: 60px;
         line-height: 80px;
@@ -428,6 +428,23 @@
     }
 
     /* ===================== map section end ===================== */
+
+    /* ===================== counter section start ===================== */
+    .counter_text {
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+    .counter_main_container {
+        gap: 70px;
+    }
+
+    .counter_number {
+        font-size: 50px;
+        line-height: 54px;
+    }
+
+    /* ===================== counter section end ===================== */
 }
 
 
@@ -601,6 +618,28 @@
     }
 
     /* ===================== map section end ===================== */
+
+    /* ===================== counter section start ===================== */
+    .counter_text {
+        font-size: 21px;
+        line-height: 40px;
+    }
+
+    .counter_main_container {
+        gap: 75px;
+    }
+
+    .counter_number {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .count_text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* ===================== counter section end ===================== */
 }
 
 
@@ -729,6 +768,38 @@
     }
 
     /* ===================== map section end ===================== */
+
+    /* ===================== container section start ===================== */
+    .counter_text {
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .counter_main_container {
+        margin-top: 61px;
+        gap: 104px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .counter_main_container {
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .counter_btn {
+        font-size: 14px;
+    }
+
+    .counter_btn_container {
+        justify-content: center;
+        display: flex;
+    }
+
+    /* ===================== container section end ===================== */
 }
 
 
