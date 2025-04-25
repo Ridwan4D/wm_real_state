@@ -78,15 +78,17 @@
         max-height: 650px;
     }
 
-    .map_img {
+    .map_img_parent {
         width: 60%;
         margin-top: -250px;
         margin-left: -210px;
     }
 
     .map_left_top {
-        margin-left: 400px;
+        top: 14%;
+        left: 69%;
     }
+
 
     .map_left_middle {
         height: 130px;
@@ -161,48 +163,23 @@
     /* ===================== gallery 1 section end ===================== */
 
     /* ===================== map section start ===================== */
-    .map_img {
+    .map_img_parent {
         width: 60%;
         margin-top: -275px;
         margin-left: -115px;
     }
 
     .map_left_top {
-        margin-left: 335px;
-    }
-
-    .map_left_middle {
-        height: 125px;
-        width: 160px;
-        margin-top: 41%;
-        margin-left: 50%;
+        top: 20%;
+        left: 65%;
     }
 
     .map_left_text_parent {
         height: 52px;
         width: 57px;
-        top: 11px;
     }
 
     /* ===================== map section end ===================== */
-}
-
-@media(max-width: 1170px) {
-    .map_left_middle {
-        height: 125px;
-        width: 160px;
-        margin-top: 30%;
-        margin-left: 40%;
-    }
-}
-
-@media(max-width: 1100px) {
-    .map_left_middle {
-        height: 125px;
-        width: 130px;
-        margin-top: 23%;
-        margin-left: 42%;
-    }
 }
 
 @media(max-width: 1024px) {
@@ -294,7 +271,6 @@
     .map_left_text_parent {
         height: 40px;
         width: 42px;
-        top: 11px;
     }
 
     /* ===================== map section end ===================== */
@@ -421,19 +397,21 @@
         max-height: 450px;
     }
 
-    .map_img {
+    .map_img_parent {
         width: 60%;
-        margin-top: -180px;
-        margin-left: -65px;
+        margin-top: -300px;
+        margin-left: -90px;
     }
 
-    .map_left_top {
-        margin-left: 250px;
+    .map_img_parent {
+        width: 70%;
+        margin-top: -240px;
+        margin-left: -133px;
     }
 
     .map_image_parent {
-        height: 30px;
-        width: 30px;
+        height: 30px !important;
+        width: 30px !important;
     }
 
     .map_left_top_inner .para,
@@ -460,33 +438,9 @@
     /* ===================== map section end ===================== */
 }
 
-@media(max-width: 950px) {
-    .map_left_middle {
-        margin-top: 38%;
-        margin-left: 59%;
-    }
-}
 
-@media(max-width: 900px) {
-    .map_left_middle {
-        margin-top: 31%;
-        margin-left: 50%;
-    }
 
-    .map_left_bottom {
-        margin-top: 65px;
-        margin-left: 90px;
-    }
-}
-
-@media(max-width: 830px) {
-    .map_left_middle {
-        margin-top: 21%;
-        margin-left: 44%;
-    }
-}
-
-@media(max-width: 767px) {
+@media(max-width: 768px) {
 
     /* ===================== common section start ===================== */
     .desc_text {
@@ -628,14 +582,14 @@
         z-index: 9991;
     }
 
-    .map_img {
-        margin-top: -123px;
+    .map_img_parent {
+        margin-top: -240px;
         margin-left: -58px;
     }
 
     .map_image_parent {
-        height: 25px;
-        width: 25px;
+        height: 25px !important;
+        width: 25px !important;
     }
 
     .map_left_top_inner .para,
@@ -644,7 +598,8 @@
     }
 
     .map_left_top {
-        margin-left: 220px;
+        top: 32%;
+        left: 61%;
     }
 
     .map_left_middle {
@@ -654,12 +609,6 @@
         margin-left: 42%;
     }
 
-    .map_left_text_parent {
-        height: 35px;
-        width: 40px;
-        left: 40px;
-    }
-
     .map_left_text_parent>.img {
         width: 25%;
     }
@@ -667,12 +616,6 @@
     .map_left_text_parent {
         height: 30px;
         width: 30px;
-        left: 38px;
-    }
-
-    .map_h_image {
-        left: 60px;
-        top: 65px;
     }
 
     .map_left_bottom {
@@ -681,47 +624,6 @@
 
     /* ===================== map section end ===================== */
 }
-
-@media(max-width: 700px) {
-    .bus_image {
-        margin-left: 75px;
-
-    }
-
-    .map_left_text_parent {
-        top: 45px;
-        left: 66px;
-    }
-
-    .map_h_image {
-        left: 79px;
-        top: 96px;
-    }
-}
-
-
-@media(max-width: 650px) {
-    .map_left_top {
-        margin-left: 190px;
-    }
-
-    .map_left_text_parent {
-        height: 30px;
-        width: 30px;
-        left: 38px;
-    }
-
-    .map_h_image {
-        left: 60px;
-        top: 65px;
-    }
-
-    .map_left_bottom {
-        margin-top: 103px;
-        margin-left: 30px;
-    }
-}
-
 
 
 @media(max-width: 600px) {
@@ -825,13 +727,32 @@
     /* ===================== slider section end ===================== */
 
     /* ===================== map section start ===================== */
-    .map_img {
-        margin-top: -80px;
+    .map_img_parent {
+        margin-top: -160px;
         margin-left: -50px;
     }
 
+    .map_image_parent {
+        height: 20px !important;
+        width: 20px !important;
+    }
+
+    .map_image_parent>img {
+        width: 80%;
+    }
+
     .map_left_top {
-        margin-left: 110px;
+        top: 27%;
+        left: 57%;
+    }
+
+    .map_left_top_inner {
+        margin-top: 8px;
+    }
+
+    .map_left_top_inner .para,
+    .map_left_bottom_inner .para {
+        font-size: 8px;
     }
 
     .bus_image {
@@ -897,27 +818,37 @@
         max-height: 300px;
     }
 
-    .map_img {
-        margin-top: -43px;
+    .map_img_parent {
+        margin-top: -96px;
         margin-left: -40px;
     }
 
+    .map_image_parent {
+        height: 15px !important;
+        width: 15px !important;
+    }
+
+    .map_left_top_inner {
+        padding: 0;
+    }
+
+    .map_left_top_inner .para,
+    .map_left_bottom_inner .para {
+        font-size: 6px;
+    }
+
+    .map_left_text_parent {
+        height: 17px;
+        width: 17px;
+    }
+
     .map_left_top {
-        margin-left: 17px;
+        top: 23%;
+        left: 52%;
     }
 
     .bus_image {
         margin-left: -60px;
-    }
-
-    .map_left_text_parent {
-        left: -25px;
-        top: 4px;
-    }
-
-    .map_h_image {
-        left: 19px;
-        top: 22px;
     }
 
     /* ===================== map section end ===================== */
@@ -958,4 +889,17 @@
     .user_name {
         font-size: 11px;
     }
+
+    /* ================ map section start ============== */
+    .map_img_parent {
+        margin-top: -57px;
+        margin-left: -40px;
+    }
+
+    .map_left_top {
+        top: 18%;
+        left: 44%;
+    }
+
+    /* ================ map section end ============== */
 }

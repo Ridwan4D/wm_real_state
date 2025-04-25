@@ -253,9 +253,9 @@
         <!-- map section start here -->
         <section id="map_section">
             <div class="container map_container position-relative">
-                <img src="./asset/image/map.jpg" alt="location" class="map_img">
-                <div class="map_left position-absolute">
-                    <div class="map_left_top">
+                <div class="position-relative map_img_parent">
+                    <img src="./asset/image/map.jpg" alt="location" class="map_img">
+                    <div class="map_left_top position-absolute">
                         <div class="d-flex gap-2">
                             <div class="map_image_parent">
                                 <img src="./asset/image/cycle.svg" alt="cycle">
@@ -275,17 +275,18 @@
                             <p class="p-0 m-0 para">AUPRK, OLD TOWN</p>
                         </div>
                     </div>
-                    <div class="map_left_middle position-relative">
-                        <div class="map_image_parent bus_img">
-                            <img src="./asset/image/bus.svg" alt="bus">
-                        </div>
-                        <div class="map_left_text_parent position-absolute text_img">
-                            <img src="./asset/image/p.svg" alt="p" class="img">
-                        </div>
-                        <div class="map_image_parent map_h_image position-absolute">
-                            <img src="./asset/image/H.svg" alt="h">
-                        </div>
+                    <div class="map_image_parent position-absolute bus_img">
+                        <img src="./asset/image/bus.svg" alt="bus" class="w-75">
                     </div>
+                    <div class="map_left_text_parent position-absolute text_img">
+                        <img src="./asset/image/p.svg" alt="p" class="img w-25">
+                    </div>
+                    <div class="map_image_parent map_h_image position-absolute">
+                        <img src="./asset/image/H.svg" alt="h" class="w-75">
+                    </div>
+                </div>
+                <div class="map_left">
+
                     <div class="map_left_bottom">
                         <div class="map_left_bottom_inner">
                             <img src="./asset/image/stash_arrow-up-light.svg" alt="">
