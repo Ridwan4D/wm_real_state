@@ -3,6 +3,8 @@ let allApartments = [];
 let selectedFloor = "all";
 let selectedRooms = [];
 let selectedType = "all";
+let sortField = null;
+let sortDirection = "asc";
 
 document.addEventListener("DOMContentLoaded", () => {
   fetch("https://ridwan4d.github.io/apartment_api/apartment_api.json")
@@ -19,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
     populateTable();
   });
 
-
   // Room & Commercial filter buttons
   const roomButtons = document.querySelectorAll(".room_buttons button");
   roomButtons.forEach((button) => {
@@ -27,15 +28,12 @@ document.addEventListener("DOMContentLoaded", () => {
       const room = button.getAttribute("data-room");
 
       if (room === "commercial") {
-        // Toggle commercial filter
         if (selectedType === "commercial") {
           selectedType = "all";
           button.classList.remove("active");
         } else {
           selectedType = "commercial";
           button.classList.add("active");
-
-          // Deactivate all room buttons
           selectedRooms = [];
           roomButtons.forEach((btn) => {
             const btnRoom = btn.getAttribute("data-room");
@@ -48,7 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // If selecting room, disable commercial filter
       selectedType = "all";
       const commercialBtn = document.querySelector('[data-room="commercial"]');
       if (commercialBtn) commercialBtn.classList.remove("active");
@@ -59,6 +56,31 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         selectedRooms.push(room);
         button.classList.add("active");
+      }
+
+      populateTable();
+    });
+  });
+
+  // Sorting Buttons
+  const sortableHeaders = document.querySelectorAll(".asc_dsc_btn");
+  sortableHeaders.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+      const fields = [
+        "completion", "type", "unite_number", "floor",
+        "room_number", "unit_area", "loggia",
+        "total", "discount_price", "availability"
+      ];
+
+      const field = fields[index]; // based on the order of your table
+
+      if (sortField === field) {
+        // if same field clicked again, just toggle direction
+        sortDirection = sortDirection === "asc" ? "desc" : "asc";
+      } else {
+        // if different field, set ascending by default
+        sortField = field;
+        sortDirection = "asc";
       }
 
       populateTable();
@@ -80,22 +102,28 @@ function populateTable() {
 
   let filteredApartments = allApartments.filter((apt) => {
     const aptType = apt.type?.toLowerCase().trim();
-
-    const matchesFloor =
-      selectedFloor === "all" || String(apt.floor) === String(selectedFloor);
-
-    const matchesRoom =
-      selectedRooms.length === 0 ||
-      (apt.room_number !== null &&
-        selectedRooms.includes(String(apt.room_number))
-      );
-
-    const matchesType =
-      selectedType === "all" ||
-      aptType.includes(selectedType.toLowerCase());
-
+    const matchesFloor = selectedFloor === "all" || String(apt.floor) === String(selectedFloor);
+    const matchesRoom = selectedRooms.length === 0 ||
+      (apt.room_number !== null && selectedRooms.includes(String(apt.room_number)));
+    const matchesType = selectedType === "all" || aptType.includes(selectedType.toLowerCase());
     return matchesFloor && matchesRoom && matchesType;
   });
+
+  // Sort if sorting is active
+  if (sortField) {
+    filteredApartments.sort((a, b) => {
+      let aValue = a[sortField];
+      let bValue = b[sortField];
+
+      // Normalize values for comparison
+      if (typeof aValue === "string") aValue = aValue.toLowerCase();
+      if (typeof bValue === "string") bValue = bValue.toLowerCase();
+
+      if (aValue < bValue) return sortDirection === "asc" ? -1 : 1;
+      if (aValue > bValue) return sortDirection === "asc" ? 1 : -1;
+      return 0;
+    });
+  }
 
   const apartmentsToShow = viewAll
     ? filteredApartments

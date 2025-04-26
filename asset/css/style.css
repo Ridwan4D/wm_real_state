@@ -861,7 +861,7 @@ body {
 
 .table_heading {
     position: relative;
-    padding: 12px 16px;
+    padding: 12px 10px;
     font-size: 12px;
     font-weight: 600;
     color: var(--heading_1_color);
@@ -882,7 +882,12 @@ body {
     color: var(--heading_1_color);
     margin-bottom: 16px !important;
 }
-
+.asc_dsc_btn{
+    background: transparent;
+    padding: 0;
+    border: none;
+    outline: none;
+}
 /* .sortable::after {
     content: "";
     position: absolute;
