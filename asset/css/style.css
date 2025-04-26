@@ -739,14 +739,14 @@
 #floorSelect {
     width: 170px;
     border: none;
-    border-bottom: 1px solid #0F172A;
+    border-bottom: 1px solid var(--heading_1_color);
     font-size: 14px;
     color: #374151;
 }
 
 #floorSelect:focus {
     border: none;
-    border-bottom: 1px solid #0F172A;
+    border-bottom: 1px solid var(--heading_1_color);
     outline: none;
 }
 
@@ -824,9 +824,23 @@
     padding: 12px 16px;
     font-size: 12px;
     font-weight: 600;
-    color: #374151;
+    color: var(--heading_1_color);
     text-align: center;
     white-space: nowrap;
+}
+
+.floor_label {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--heading_1_color);
+    margin-bottom: 24px !important;
+}
+
+.room_label {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--heading_1_color);
+    margin-bottom: 16px !important;
 }
 
 .sortable::after {
@@ -854,11 +868,15 @@
 
 .table_body tr:nth-child(even) {
     background-color: #E2E8F0;
+    color: var(--deep_slate) !important;
+}
+
+.table_body tr:nth-child(even) .table_data {
+    color: var(--deep_slate) !important;
 }
 
 .table_data {
     padding: 14px 16px;
-    font-size: 12px;
     color: #4b5563;
     text-align: center;
     white-space: nowrap;
@@ -866,7 +884,6 @@
 
 .three_sixty {
     padding: 6px 12px;
-    color: #1f2937;
     border: none;
     background: var(--white);
     cursor: pointer;

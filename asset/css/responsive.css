@@ -639,6 +639,15 @@
         line-height: 24px;
     }
 
+    .choose_filters {
+        margin-bottom: 56px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start !important;
+        align-items: start;
+        gap: 20px;
+    }
+
     /* ===================== counter section end ===================== */
 }
 
@@ -797,6 +806,10 @@
     .counter_btn_container {
         justify-content: center;
         display: flex;
+    }
+
+    .choose_middle {
+        margin-top: 45px;
     }
 
     /* ===================== container section end ===================== */
