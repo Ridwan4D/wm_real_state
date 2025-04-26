@@ -150,13 +150,22 @@
     margin-top: -45px;
 }
 
-/* .banner_container {
-    -webkit-mask: url('../image/banner.svg') center / contain no-repeat;
-} */
-
-.banner_image {
+.banner_wrapper {
+    filter: url('#goo'); 
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  
+  .banner_image {
     clip-path: polygon(0 8%, 12% 8%, 14% 0, 34% 0, 36% 8%, 100% 8%, 100% 51%, 45% 51%, 44% 61%, 11% 61%, 3% 54%, 0 51%);
-}
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
 
 .inner_b_container {
     display: flex;
@@ -438,6 +447,17 @@
     background: #ffeb3b;
     font-weight: bold;
     font-size: 24px;
+    position: relative;
+}
+
+.mySwiper_1 .swiper-slide-active::before {
+    content: "";
+    height: 100%;
+    max-width: 100%;
+    width: 50%;
+    background: white;
+    position: absolute;
+    left: 0;
 }
 
 .mySwiper_1 .swiper-slide img {

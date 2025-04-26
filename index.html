@@ -51,7 +51,23 @@
         <!-- banner section start here -->
         <section id="banner_section">
             <div class="container banner_container position-relative">
-                <img src="./asset/image/banner_img.jpg" alt="banner" class="w-100 h-100 banner_image">
+                <svg style="visibility: hidden; position: absolute;" width="0" height="0"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  
+                  0 1 0 0 0  
+                  0 0 1 0 0  
+                  0 0 0 19 -9" result="goo" />
+                            <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+                        </filter>
+                    </defs>
+                </svg>
+                <div class="banner_wrapper">
+                    <img src="./asset/image/banner_img.jpg" alt="banner" class="w-100 h-100 banner_image">
+                </div>
+
                 <div class="inner_b_container position-absolute">
                     <div>
                         <p class="banner_text m-0 p-0">
@@ -463,7 +479,8 @@
         </div>
         <div class="footer_bottom">
             <div class="container footer_bottom_container">
-                <p class="copyright p-0 m-0"><span class="copyright_span">real state</span> © 2025. All rights reserved.</p>
+                <p class="copyright p-0 m-0"><span class="copyright_span">real state</span> © 2025. All rights reserved.
+                </p>
                 <div class="footer-links">
                     <a href="#" class="footer-link">Cookie Policy</a>
                     <a href="#" class="footer-link">Terms of Use</a>
@@ -471,7 +488,6 @@
             </div>
         </div>
     </footer>
-    <br><br><br><br><br><br><br><br>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="asset/js/bootstrap.bundle.min.js"></script>
     <script src="asset/js/script.js"></script>
