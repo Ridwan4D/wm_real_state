@@ -853,7 +853,7 @@
 }
 
 .table_body tr:nth-child(even) {
-    background-color: #f9fafb;
+    background-color: #E2E8F0;
 }
 
 .table_data {
@@ -864,19 +864,16 @@
     white-space: nowrap;
 }
 
-.table_data button {
+.three_sixty {
     padding: 6px 12px;
-    background-color: #f3f4f6;
     color: #1f2937;
-    border: 1px solid #d1d5db;
-    border-radius: 4px;
+    border: none;
+    background: var(--white);
     cursor: pointer;
-    font-size: 12px;
-    font-weight: 500;
     transition: background-color 0.2s;
 }
 
-.table_data button:hover {
+.table_data .three_sixty:hover {
     background-color: #e5e7eb;
 }
 
@@ -884,6 +881,23 @@
     background-color: #f1f5f9;
 }
 
+.view_all_btn_container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
 
+.view_all_btn {
+    padding: 12px 16px;
+    background: #333935;
+    color: var(--white);
+    border: none;
+    outline: none;
+    transition: all .2s ease-out;
+}
+
+.view_all_btn:hover {
+    transform: scale(.95);
+}
 
 /* ===================== choose section end ===================== */
