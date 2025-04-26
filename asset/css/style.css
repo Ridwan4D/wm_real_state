@@ -34,6 +34,10 @@
     font-family: 'MyFont', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .container {
     max-width: 1340px;
     width: 100%;
@@ -151,20 +155,20 @@
 }
 
 .banner_wrapper {
-    filter: url('#goo'); 
+    filter: url('#goo');
     overflow: hidden;
     position: relative;
     width: 100%;
     height: auto;
     display: inline-block;
-  }
-  
-  .banner_image {
+}
+
+.banner_image {
     clip-path: polygon(0 8%, 12% 8%, 14% 0, 34% 0, 36% 8%, 100% 8%, 100% 51%, 45% 51%, 44% 61%, 11% 61%, 3% 54%, 0 51%);
     width: 100%;
     height: auto;
     display: block;
-  }
+}
 
 
 .inner_b_container {
@@ -455,7 +459,7 @@
     height: 100%;
     max-width: 100%;
     width: 50%;
-    background: white;
+    background: url("../image/slider_3.png");
     position: absolute;
     left: 0;
 }
@@ -472,7 +476,8 @@
     margin-top: 48px;
 }
 
-.swiper_1_pagination {
+.swiper_1_pagination,
+.swiper_2_pagination {
     display: flex;
     align-items: center;
 }
@@ -492,11 +497,17 @@
     background: var(--swiper-pagination-color, var(--pagination_bullet));
 }
 
+
 /* ===================== slider_1 section end ===================== */
 
 /* ===================== slider_2 section start ===================== */
-.slider_2_container {
+#slider_2_section {
+    display: flex;
+    align-items: center;
     padding: 60px 15px;
+}
+
+.slider_2_container {
     display: flex;
     gap: 120px;
 }
@@ -527,6 +538,8 @@
 .mySwiper_2 .swiper-slide-next {
     width: 35% !important;
 }
+
+
 
 /* ===================== slider_2 section end ===================== */
 
@@ -671,6 +684,13 @@
     font-size: 36px;
     line-height: 54px;
     font-weight: 400;
+    overflow: hidden;
+}
+
+.counter_text span {
+    opacity: 0;
+    display: inline-block;
+    transform: translateY(20px);
 }
 
 .counter_main_container {
@@ -863,7 +883,7 @@
     margin-bottom: 16px !important;
 }
 
-.sortable::after {
+/* .sortable::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -879,7 +899,7 @@
 
 .sortable_1::after {
     content: url("../image/apartment_up_fill_arr.svg");
-}
+} */
 
 .table_body tr {
     border-bottom: 1px solid #f1f5f9;

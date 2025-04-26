@@ -165,4 +165,25 @@ if (container) {
 
 
 
+// ============ text animation ===============
+const textElement = document.getElementById("counterText");
+const words = textElement.innerText.split(' ');
 
+// Wrap each word inside a <span>
+textElement.innerHTML = words.map(word => `<span>${word}</span>`).join(' ');
+
+// Animation
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to("#counterText span", {
+  scrollTrigger: {
+    trigger: "#counter_section", // section to watch
+    start: "top 80%",            // when top of section hits 80% of viewport
+    toggleActions: "restart none none none", // restart the animation every time user enters
+  },
+  opacity: 1,
+  y: 0,
+  duration: 0.6,
+  stagger: 0.1, // delay between each word
+  ease: "power2.out"
+});

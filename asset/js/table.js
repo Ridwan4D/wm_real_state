@@ -2,7 +2,7 @@ let viewAll = false;
 let allApartments = [];
 let selectedFloor = "all";
 let selectedRooms = [];
-let selectedType = "all"; // residential, commercial, or all
+let selectedType = "all";
 
 document.addEventListener("DOMContentLoaded", () => {
   fetch("https://ridwan4d.github.io/apartment_api/apartment_api.json")
@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     selectedFloor = e.target.value;
     populateTable();
   });
+
 
   // Room & Commercial filter buttons
   const roomButtons = document.querySelectorAll(".room_buttons button");
@@ -43,7 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
           });
         }
-
         populateTable();
         return;
       }
@@ -87,7 +87,8 @@ function populateTable() {
     const matchesRoom =
       selectedRooms.length === 0 ||
       (apt.room_number !== null &&
-        selectedRooms.includes(String(apt.room_number)));
+        selectedRooms.includes(String(apt.room_number))
+      );
 
     const matchesType =
       selectedType === "all" ||

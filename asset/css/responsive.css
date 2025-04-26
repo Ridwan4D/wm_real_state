@@ -1,3 +1,9 @@
+@media(min-width: 1440px) {
+    .slide_2_top {
+        margin-left: 17%;
+    }
+}
+
 @media(min-width: 1231px) and (max-width: 1260px) {
     .heading_2 {
         font-size: 62px;
