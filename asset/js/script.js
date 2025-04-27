@@ -1,6 +1,6 @@
 const counts = document.querySelectorAll(".counter_number");
 const speed = 100;
-let isCounting = false;
+let isCounting = false; // Prevent multiple triggers at the same time
 
 document.addEventListener("DOMContentLoaded", function () {
   const video = document.getElementById("property-video");
@@ -44,7 +44,15 @@ document.addEventListener("DOMContentLoaded", function () {
 /** =============================
  * script for slider
 ============================= */
-
+const swiper_1 = new Swiper(".mySwiper_1_1", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  loop: true,
+});
 
 // Fixed Swiper Configuration
 const swiper_2 = new Swiper(".mySwiper_2", {
@@ -161,6 +169,3 @@ gsap.to("#counterText span", {
   stagger: 0.1, // delay between each word
   ease: "power2.out"
 });
-
-
-
