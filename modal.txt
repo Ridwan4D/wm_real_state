@@ -1,3 +1,69 @@
+<!-- Modal Wrapper -->
+        <div id="modal_wrapper">
+            <!-- On Sale Modal -->
+            <div class="modal fade" id="onSaleModal" tabindex="-1" aria-labelledby="onSaleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="onSaleModalLabel">Apartment On Sale</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Book your dream apartment now at a special discount!</p>
+                            <form id="onSaleForm">
+                                <div class="mb-3">
+                                    <label for="onSaleName" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="onSaleName"
+                                        placeholder="Enter your name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="onSalePhone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="onSalePhone"
+                                        placeholder="Enter your phone number" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="onSaleEmail" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="onSaleEmail"
+                                        placeholder="Enter your email" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pre-Booked Modal -->
+            <div class="modal fade" id="preBookedModal" tabindex="-1" aria-labelledby="preBookedModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="preBookedModalLabel">Buyer Information</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div id="buyerInfo">
+                                <p><strong>Name:</strong> John Doe</p>
+                                <p><strong>Phone:</strong> +1 234 567 890</p>
+                                <p><strong>Email:</strong> johndoe@example.com</p>
+                                <p><strong>Apartment No:</strong> APT-101</p>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+================================================= js =================================================
+
 let viewAll = false;
 let allApartments = [];
 let selectedFloor = "all";
